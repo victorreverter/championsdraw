@@ -1,266 +1,298 @@
 {
     "bombo1" : {
         "realmadrid": {
+            "bomboNumber": 1, 
             "name": "Real Madrid",
-            "shortname": "RMA",
+            "shortName": "RMA",
             "country": "SPA",
-            "titles": "13",
+            "titles": 13,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         },
         "atletico": {
+            "bomboNumber": 1, 
             "name": "Atlético de Madrid",
-            "shortname": "ATM",
+            "shortName": "ATM",
             "country": "SPA",
-            "titles": "0",
+            "titles": 0,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         },
         "bayernmunich": {
+            "bomboNumber": 1, 
             "name": "Bayern München",
-            "shortname": "BAY",
+            "shortName": "BAY",
             "country": "GER",
-            "titles": "5",
+            "titles": 5,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         },
         "barcelona": {
+            "bomboNumber": 1, 
             "name": "F.C Barcelona",
-            "shortname": "BAR",
+            "shortName": "BAR",
             "country": "SPA",
-            "titles": "5",
+            "titles": 5,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         },
         "juventus": {
+            "bomboNumber": 1, 
             "name": "Juventus F.C",
-            "shortname": "JUV",
+            "shortName": "JUV",
             "country": "ITA",
-            "titles": "2",
+            "titles": 2,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         },
         "psg": {
+            "bomboNumber": 1, 
             "name": "Paris St-Germain",
-            "shortname": "PSG",
+            "shortName": "PSG",
             "country": "FRA",
-            "titles": "0",
+            "titles": 0,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         },
         "manchestercity": {
+            "bomboNumber": 1, 
             "name": "Manchester City",
-            "shortname": "MCI",
+            "shortName": "MCI",
             "country": "ENG",
-            "titles": "0",
+            "titles": 0,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         },
         "lokomotiv": {
+            "bomboNumber": 1, 
             "name": "Lokomotiv Moskva",
-            "shortname": "LOK",
+            "shortName": "LOK",
             "country": "RUS",
-            "titles": "0",
+            "titles": 0,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         }
     },
     "bombo2": {
         "borussia": {
+            "bomboNumber": 2, 
             "name": "Borussia Dortmund",
-            "shortname": "BOR",
+            "shortName": "BOR",
             "country": "GER",
-            "titles": "1",
+            "titles": 1,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         },
         "oporto": {
+            "bomboNumber": 2, 
             "name": "Oporto F.C",
-            "shortname": "OPO",
+            "shortName": "OPO",
             "country": "POR",
-            "titles": "2",
+            "titles": 2,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         },
         "manchesterunited": {
+            "bomboNumber": 2, 
             "name": "Manchester United",
-            "shortname": "MUN",
+            "shortName": "MUN",
             "country": "ENG",
-            "titles": "3",
+            "titles": 3,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         },
         "shakhtar": {
+            "bomboNumber": 2, 
             "name": "Shakhtar Donetsk",
-            "shortname": "SHK",
+            "shortName": "SHK",
             "country": "UKR",
-            "titles": "0",
+            "titles": 0,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         },
         "benfica": {
+            "bomboNumber": 2, 
             "name": "Benfica",
-            "shortname": "BEN",
+            "shortName": "BEN",
             "country": "POR",
-            "titles": "2",
+            "titles": 2,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         },
         "napoli": {
+            "bomboNumber": 2, 
             "name": "S.S.C. Napoli",
-            "shortname": "NAP",
+            "shortName": "NAP",
             "country": "ITA",
-            "titles": "0",
+            "titles": 0,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         },
         "tottenham": {
+            "bomboNumber": 2, 
             "name": "Tottenham Hotspur",
-            "shortname": "TOT",
+            "shortName": "TOT",
             "country": "ENG",
-            "titles": "0",
+            "titles": 0,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         },
         "roma": {
+            "bomboNumber": 2, 
             "name": "A.S Roma",
-            "shortname": "ROM",
+            "shortName": "ROM",
             "country": "ITA",
-            "titles": "0",
+            "titles": 0,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         }
     },
     "bombo3": {
         "liverpool": {
+            "bomboNumber": 3, 
             "name": "Liverpool F.C",
-            "shortname": "LIV",
+            "shortName": "LIV",
             "country": "ENG",
-            "titles": "5",
+            "titles": 5,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         },
         "schalke": {
+            "bomboNumber": 3, 
             "name": "Schalke 04",
-            "shortname": "SCH",
+            "shortName": "SCH",
             "country": "GER",
-            "titles": "0",
+            "titles": 0,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         },
         "lyon": {
+            "bomboNumber": 3, 
             "name": "Olympique Lyonnais",
-            "shortname": "OLY",
+            "shortName": "OLY",
             "country": "FRA",
-            "titles": "0",
+            "titles": 0,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         },
         "monaco": {
+            "bomboNumber": 3, 
             "name": "AS Monaco",
-            "shortname": "ASM",
+            "shortName": "ASM",
             "country": "FRA",
-            "titles": "0",
+            "titles": 0,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         },
         "ajax": {
+            "bomboNumber": 3, 
             "name": "Ajax F.C",
-            "shortname": "AJA",
+            "shortName": "AJA",
             "country": "NLD",
-            "titles": "4",
+            "titles": 4,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         },
         "cska": {
+            "bomboNumber": 3, 
             "name": "CSKA Moskva",
-            "shortname": "CSK",
+            "shortName": "CSK",
             "country": "RUS",
-            "titles": "0",
+            "titles": 0,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         },
         "psv": {
+            "bomboNumber": 3, 
             "name": "PSV Eindhoven",
-            "shortname": "PSV",
+            "shortName": "PSV",
             "country": "NLD",
-            "titles": "1",
+            "titles": 1,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         },
         "valencia": {
+            "bomboNumber": 3, 
             "name": "Valencia C.F",
-            "shortname": "VAL",
+            "shortName": "VAL",
             "country": "SPA",
-            "titles": "0",
+            "titles": 0,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         }
     },
     "bombo4": {
         "viktoria": {
+            "bomboNumber": 4, 
             "name": "Viktoria Plzen",
-            "shortname": "VKP",
+            "shortName": "VKP",
             "country": "CZE",
-            "titles": "0",
+            "titles": 0,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         },
         "brujas": {
+            "bomboNumber": 4, 
             "name": "Club Brugge",
-            "shortname": "BRU",
+            "shortName": "BRU",
             "country": "BEL",
-            "titles": "0",
+            "titles": 0,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         },
         "galatasaray": {
+            "bomboNumber": 4, 
             "name": "Galatasaray S.K",
-            "shortname": "GAL",
+            "shortName": "GAL",
             "country": "TUR",
-            "titles": "0",
+            "titles": 0,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         },
         "youngboys": {
+            "bomboNumber": 4, 
             "name": "BSC Young Boys",
-            "shortname": "YBY",
+            "shortName": "YBY",
             "country": "SWI",
-            "titles": "0",
+            "titles": 0,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         },
         "inter": {
+            "bomboNumber": 4, 
             "name": "Internazionale Milano",
-            "shortname": "INT",
+            "shortName": "INT",
             "country": "ITA",
-            "titles": "3",
+            "titles": 3,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         },
         "hoffenheim": {
+            "bomboNumber": 4, 
             "name": "TSG 1899 Hoffenheim",
-            "shortname": "HOF",
+            "shortName": "HOF",
             "country": "GER",
-            "titles": "0",
+            "titles": 0,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         },
         "estrellaroja": {
+            "bomboNumber": 4, 
             "name": "Crvena Zvezda",
-            "shortname": "CZV",
+            "shortName": "CZV",
             "country": "SEB",
-            "titles": "0",
+            "titles": 0,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         },
         "aekatenas": {
+            "bomboNumber": 4, 
             "name": "AEK Athens F.C",
-            "shortname": "AEK",
+            "shortName": "AEK",
             "country": "GRE",
-            "titles": "0",
+            "titles": 0,
             "logo": "url()",
-            "countryflag": "url()"
+            "countryFlag": "url()"
         }
     }
 }
