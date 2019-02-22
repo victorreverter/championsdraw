@@ -50,6 +50,8 @@ request()
             // console.log(bombo3);
             // console.log(bombo4);
 
+            // get the teams from the bombos
+
             var getTeams = (bomboValues) => {
                 var bomboKeys = Object.keys(bomboValues);
                 for (const keysObj in bomboKeys) {
@@ -60,12 +62,14 @@ request()
                 }
             }
 
-            // access to all the bombos teams
+            // access to all the bombos and the teams through the getTeams function
 
             for (let bomboVal = 1; bomboVal <= 4; bomboVal++) {
                 // console.log(bomboVal);
                 var currentBombo = 'bombo' + bomboVal;
+
                 console.log(currentBombo);
+
                 getTeams(eval(currentBombo));
             }
 
