@@ -50,6 +50,25 @@ request()
             // console.log(bombo3);
             // console.log(bombo4);
 
+            var groupBox = [[], [], [], [], [], [], [], []];
+
+            var groupA = groupBox[0],
+            groupB = groupBox[1],
+            groupC = groupBox[2],
+            groupD = groupBox[3],
+            groupE = groupBox[4],
+            groupF = groupBox[5],
+            groupG = groupBox[6],
+            groupH = groupBox[7];
+
+            // console.log(groupA);  
+            // console.log(groupBox);
+
+            var bomboOneBox = [];
+            var bomboTwoBox = [];
+            var bomboThreeBox = [];
+            var bomboFourBox = [];
+
             // get the teams from the bombos
 
             var getTeams = (bomboValues) => {
@@ -59,8 +78,46 @@ request()
                     // console.log(bomboKeys[keysObj]);
                     var allTeams = bomboKeys[keysObj];
                     // console.log(bomboValues[allTeams]); // access to Teams Objects
-                    console.log(bomboValues[allTeams].name);  
-                    console.log(bomboValues[allTeams].bomboNumber);                       
+
+                    // console.log(bomboValues[allTeams].name);  
+                    // console.log(bomboValues[allTeams].bomboNumber);
+
+                    var bomboVal = bomboValues[allTeams].bomboNumber;
+                    var bomboTeamObj = bomboValues[allTeams];                    
+                    
+                    if(bomboVal === 1) {                        
+                        bomboOneBox.push(bomboValues[allTeams]);
+                        // console.log(bomboValues[allTeams].name);
+                        // console.log('Coco is One');
+
+                        // console.log(bomboOneBox);
+                        
+                        if (bomboOneBox.length === 8) {
+                            console.log('Coco One is 8 teams now');
+
+                            for (let i = 0; i < bomboOneBox.length; i++) {
+                                // var a = Math.floor(Math.random() * 8) + 1;
+
+                                var minIndex = 0;
+                                var maxIndex = 7;
+                                var lastRandom,
+                                    randomVal;
+
+                                if (randomVal === undefined || randomVal == lastRandom){
+                                    randomVal = Math.floor(Math.random() * maxIndex) + 1;
+
+                                    console.log(randomVal);
+                                    console.log(lastRandom);
+                                }
+
+                                // console.log(lastRandom);
+                                
+
+                                // console.log(bomboOneBox[i]);
+                            }
+
+                        }
+                    }
                 }
             }
 
@@ -70,15 +127,13 @@ request()
                 // console.log(bomboVal);
                 var currentBombo = 'bombo' + bomboVal;
 
-                console.log(currentBombo);
                 // console.log(currentBombo);
                 getTeams(eval(currentBombo));
             }
 
             //this is another test comment
 
-            // getTeams(bombo1);
-            
+            // getTeams(bombo1);            
                     
         }    
     )
