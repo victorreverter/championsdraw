@@ -57,8 +57,10 @@ request()
                 for (const keysObj in bomboKeys) {
                     // console.log(keysObj); 
                     // console.log(bomboKeys[keysObj]);
-                    var a = bomboKeys[keysObj];
-                    console.log(bomboValues[a]); // access to Teams Objects   
+                    var allTeams = bomboKeys[keysObj];
+                    // console.log(bomboValues[allTeams]); // access to Teams Objects
+                    console.log(bomboValues[allTeams].name);  
+                    console.log(bomboValues[allTeams].bomboNumber);                       
                 }
             }
 
@@ -69,9 +71,11 @@ request()
                 var currentBombo = 'bombo' + bomboVal;
 
                 console.log(currentBombo);
-
+                // console.log(currentBombo);
                 getTeams(eval(currentBombo));
             }
+
+            //this is another test comment
 
             // getTeams(bombo1);
             
