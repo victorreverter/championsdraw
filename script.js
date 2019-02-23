@@ -93,29 +93,48 @@ request()
                         // console.log(bomboOneBox);
                         
                         if (bomboOneBox.length === 8) {
-                            console.log('Coco One is 8 teams now');
 
-                            for (let i = 0; i < bomboOneBox.length; i++) {
-                                // var a = Math.floor(Math.random() * 8) + 1;
+                            // console.log(bomboOneBox);
+                            // console.log('Coco One is 8 teams now');
 
-                                var minIndex = 0;
-                                var maxIndex = 7;
-                                var lastRandom,
-                                    randomVal;
+                            drawerLogic(bomboOneBox);
+                            
+                            //Original Function to Draw
 
-                                if (randomVal === undefined || randomVal == lastRandom){
-                                    randomVal = Math.floor(Math.random() * maxIndex) + 1;
+                            // var a = [0, 1, 2, 3, 4, 5, 6, 7];
+                            // var b = [];
 
-                                    console.log(randomVal);
-                                    console.log(lastRandom);
-                                }
+                            // for (let i = 0; i < a.length;) {
+                            //     var c = Math.floor(Math.random() * 8);
 
-                                // console.log(lastRandom);
-                                
+                            //     // console.log(b);
 
-                                // console.log(bomboOneBox[i]);
+                            //     if (b.includes(a[c])) {
+                            //         continue;
+                            //     } else {
+                            //         b.push(a[c]);
+                            //         i++;
+                            //     }
+                            // }
+
+                        }
+                    }
+
+                    function drawerLogic(bomboLabel) {
+                        var a = [0, 1, 2, 3, 4, 5, 6, 7];
+                        var b = [];
+
+                        for (let i = 0; i < a.length;) {
+                            var c = Math.floor(Math.random() * 8);
+
+                            console.log(b);
+
+                            if (b.includes(bomboLabel[c])) {
+                                continue;
+                            } else {
+                                b.push(bomboLabel[c]);
+                                i++;
                             }
-
                         }
                     }
                 }
