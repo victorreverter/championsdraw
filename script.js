@@ -87,56 +87,117 @@ request()
                     
                     if(bomboVal === 1) {                        
                         bomboOneBox.push(bomboValues[allTeams]);
+
+                        orderTeams(bomboOneBox);
+
                         // console.log(bomboValues[allTeams].name);
                         // console.log('Coco is One');
 
                         // console.log(bomboOneBox);
                         
-                        if (bomboOneBox.length === 8) {
+                        // if (bomboOneBox.length === 8) {
 
-                            // console.log(bomboOneBox);
-                            // console.log('Coco One is 8 teams now');
+                        //     // console.log(bomboOneBox);
+                        //     // console.log('Coco One is 8 teams now');
 
-                            drawerLogic(bomboOneBox);
+                        //     // drawerLogic(bomboOneBox);
                             
-                            //Original Function to Draw
+                        //     //Original Function to Draw
 
-                            // var a = [0, 1, 2, 3, 4, 5, 6, 7];
-                            // var b = [];
+                        //     // var a = [0, 1, 2, 3, 4, 5, 6, 7];
+                        //     // var b = [];
 
-                            // for (let i = 0; i < a.length;) {
-                            //     var c = Math.floor(Math.random() * 8);
+                        //     // for (let i = 0; i < a.length;) {
+                        //     //     var c = Math.floor(Math.random() * 8);
 
-                            //     // console.log(b);
+                        //     //     // console.log(b);
 
-                            //     if (b.includes(a[c])) {
-                            //         continue;
-                            //     } else {
-                            //         b.push(a[c]);
-                            //         i++;
-                            //     }
-                            // }
+                        //     //     if (b.includes(a[c])) {
+                        //     //         continue;
+                        //     //     } else {
+                        //     //         b.push(a[c]);
+                        //     //         i++;
+                        //     //     }
+                        //     // }
 
-                        }
+                        // }
+                    } else if (bomboVal === 2) {
+                        bomboTwoBox.push(bomboValues[allTeams]);
+                        orderTeams(bomboTwoBox);
+                    } else if (bomboVal === 3) {
+                        bomboThreeBox.push(bomboValues[allTeams]);
+                        orderTeams(bomboThreeBox);
+                    } else {
+                        bomboFourBox.push(bomboValues[allTeams]);
+                        orderTeams(bomboFourBox);
                     }
 
-                    function drawerLogic(bomboLabel) {
-                        var a = [0, 1, 2, 3, 4, 5, 6, 7];
-                        var b = [];
+                    function orderTeams(bomboBoxVal) {
 
-                        for (let i = 0; i < a.length;) {
-                            var c = Math.floor(Math.random() * 8);
+                        if (bomboBoxVal.length === 8) {
+                            drawerLogic(bomboBoxVal);
+                            // console.log(bomboBoxVal);
+                        }
 
-                            console.log(b);
+                        function drawerLogic(bomboLabel) {
+                            var a = [0, 1, 2, 3, 4, 5, 6, 7];
+                            var b = [];
 
-                            if (b.includes(bomboLabel[c])) {
-                                continue;
-                            } else {
-                                b.push(bomboLabel[c]);
-                                i++;
+                            // console.log(b);                            
+
+                            for (let i = 0; i < a.length;) {
+                                var c = Math.floor(Math.random() * 8);
+
+                                // console.log(b);
+
+                                // if (b.includes(bomboLabel[c])) {
+                                //     continue;
+                                // } else {
+                                //     b.push(bomboLabel[c]);
+                                //     i++;
+                                // }
+
+                                if (b.includes(bomboLabel[c])) {
+                                    continue;
+                                } else {
+                                    b.push(bomboLabel[c]);
+                                    i++;
+                                }
+                                // console.log(b);
+                                // console.log(groupBox[c]);
                             }
+
+                            // Put all the Bombo 1 teams in their groups
+
+                            for (let j = 0; j < b.length; j++) {
+
+                                // var countryGrab;
+
+                                groupBox[j].push(b[j]);
+                                // console.log(groupBox[j][0].country);
+                                
+                                // for (let h = 0; h < groupBox[j].length; h++) {
+
+                                //     var countryGrab = [];
+
+                                //     if (groupBox[j][h].country === b[j].country) {
+                                //         console.log('country is the same');
+                                //     }
+                                // }
+
+                                // if (groupBox[j].country === b[j].country){
+                                //     console.log('country is the same');                                    
+                                // }
+                            }
+                                                      
+                            // console.log(b);
+                            console.log(groupBox);
+
+                            // -------------------------------------------
                         }
+
                     }
+                    
                 }
             }
 
@@ -148,6 +209,8 @@ request()
 
                 // console.log(currentBombo);
                 getTeams(eval(currentBombo));
+                // console.log(groupA);
+                
             }
 
             //this is another test comment
