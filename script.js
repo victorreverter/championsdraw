@@ -148,15 +148,6 @@ request()
                             for (let i = 0; i < a.length;) {
                                 var c = Math.floor(Math.random() * 8);
 
-                                // console.log(b);
-
-                                // if (b.includes(bomboLabel[c])) {
-                                //     continue;
-                                // } else {
-                                //     b.push(bomboLabel[c]);
-                                //     i++;
-                                // }
-
                                 if (b.includes(bomboLabel[c])) {
                                     continue;
                                 } else {
@@ -172,31 +163,17 @@ request()
                             for (let j = 0; j < b.length; j++) {
 
                                 var countryGrab = [];
-
-                                groupBox[j].push(b[j]);                                  
                                 
-                                // console.log(groupBox[j]);
+                                //--------------------------------------------------------
 
-                                for (let h = 0; h < groupBox[j].length; h++) {
-                                    
-                                    //------------------------------------------
+                                countryGrab.push(b[j].country);
 
-                                    if (countryGrab.includes(b[j].country)) {
+                                groupBox[j].push(b[j]);
 
-                                        console.log('country is the same');
-                                        continue;
-
-                                    } else {
-                                        countryGrab.push(groupBox[j][h].country);
-                                        // h++; // do not do that is an infinite loop
-                                    }
-
-                                    // countryGrab.push(groupBox[j][h].country);
-                                    console.log(countryGrab);
-
-                                    //-------------------------------------------                                
+                                if (groupBox[j].length == 4) {
+                                    console.log(groupBox[j]);
                                 }
-                            }
+                            }                          
                                                       
                             // console.log(b);
                             // console.log(groupBox);
@@ -207,7 +184,7 @@ request()
                     }
                     
                 }
-            }
+            }            
 
             // access to all the bombos and the teams through the getTeams function
 
