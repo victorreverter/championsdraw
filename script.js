@@ -171,27 +171,35 @@ request()
 
                             for (let j = 0; j < b.length; j++) {
 
-                                // var countryGrab;
+                                var countryGrab = [];
 
-                                groupBox[j].push(b[j]);
-                                // console.log(groupBox[j][0].country);
+                                groupBox[j].push(b[j]);                                  
                                 
-                                // for (let h = 0; h < groupBox[j].length; h++) {
+                                // console.log(groupBox[j]);
 
-                                //     var countryGrab = [];
+                                for (let h = 0; h < groupBox[j].length; h++) {
+                                    
+                                    //------------------------------------------
 
-                                //     if (groupBox[j][h].country === b[j].country) {
-                                //         console.log('country is the same');
-                                //     }
-                                // }
+                                    if (countryGrab.includes(b[j].country)) {
 
-                                // if (groupBox[j].country === b[j].country){
-                                //     console.log('country is the same');                                    
-                                // }
+                                        console.log('country is the same');
+                                        continue;
+
+                                    } else {
+                                        countryGrab.push(groupBox[j][h].country);
+                                        // h++; // do not do that is an infinite loop
+                                    }
+
+                                    // countryGrab.push(groupBox[j][h].country);
+                                    console.log(countryGrab);
+
+                                    //-------------------------------------------                                
+                                }
                             }
                                                       
                             // console.log(b);
-                            console.log(groupBox);
+                            // console.log(groupBox);
 
                             // -------------------------------------------
                         }
